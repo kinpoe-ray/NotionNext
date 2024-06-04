@@ -131,7 +131,7 @@ const BLOG = {
     process.env.NEXT_PUBLIC_CUSTOM_RIGHT_CLICK_CONTEXT_MENU || true, // 自定义右键菜单，覆盖系统菜单
   CUSTOM_RIGHT_CLICK_CONTEXT_MENU_THEME_SWITCH:
     process.env.NEXT_PUBLIC_CUSTOM_RIGHT_CLICK_CONTEXT_MENU_THEME_SWITCH ||
-    true, // 是否显示切换主题
+    false, // 是否显示切换主题
   CUSTOM_RIGHT_CLICK_CONTEXT_MENU_DARK_MODE:
     process.env.NEXT_PUBLIC_CUSTOM_RIGHT_CLICK_CONTEXT_MENU_DARK_MODE || true, // 是否显示深色模式
   CUSTOM_RIGHT_CLICK_CONTEXT_MENU_SHARE_LINK:
@@ -495,7 +495,7 @@ const BLOG = {
     slug: process.env.NEXT_PUBLIC_NOTION_PROPERTY_SLUG || 'slug',
     category: process.env.NEXT_PUBLIC_NOTION_PROPERTY_CATEGORY || 'category',
     date: process.env.NEXT_PUBLIC_NOTION_PROPERTY_DATE || 'date',
-    tags: process.env.NEXT_PUBLIC_NOTION_PROPERTY_TAGS || 'topics',
+    tags: process.env.NEXT_PUBLIC_NOTION_PROPERTY_TAGS || 'tag',
     icon: process.env.NEXT_PUBLIC_NOTION_PROPERTY_ICON || 'icon',
     ext: process.env.NEXT_PUBLIC_NOTION_PROPERTY_EXT || 'ext' // 扩展字段，存放json-string，用于复杂业务
   },
